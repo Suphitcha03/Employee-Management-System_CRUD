@@ -16,20 +16,32 @@ if(!isset($_GET["id"])){
 }
 $result=$controller->getDepartments();
 
-$roles = [
-    1  => 'Junior Developer',
-    2  => 'Mid-level Developer',
-    3  => 'Senior Developer',
-    4  => 'IT Support',
-    5  => 'Marketing Trainee',
-    6  => 'Marketing Specialist',
-    7  => 'Marketing Assistant',
-    8  => 'Junior Accountant',
-    9  => 'Senior Accountant',
-    10 => 'HR Officer',
-    11 => 'Sales Executive',
-    12 => 'Operation Staff',
-    13 => 'Operation Helper'
+$rolesByDept = [
+    'IT' => [
+        1 => 'Junior Developer',
+        2 => 'Mid-level Developer',
+        3 => 'Senior Developer',
+        4 => 'IT Support'
+    ],
+    'Marketing' => [
+        5 => 'Marketing Trainee',
+        6 => 'Marketing Specialist',
+        7 => 'Marketing Assistant'
+    ],
+    'Accounting' => [
+        8 => 'Junior Accountant',
+        9 => 'Senior Accountant'
+    ],
+    'HR' => [
+        10 => 'HR Officer'
+    ],
+    'Sales' => [
+        11 => 'Sales Executive'
+    ],
+    'Operations' => [
+        12 => 'Operation Staff',
+        13 => 'Operation Helper'
+    ]
 ];
 ?>
 <div class="container mt-4" style="max-width:600px">
