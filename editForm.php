@@ -124,7 +124,7 @@ $rolesByDept = [
             <!-- สถานะ -->
             <div class="mb-3">
                  <label class="form-label">สถานะ</label>
-                    <select name="status" class="form-select">
+                    <select name="status" id ="status" class="form-select">
                         <option value="active"     <?php if($emp['status']=='active')     echo 'selected'; ?>>Active</option>
                         <option value="resigned"   <?php if($emp['status']=='resigned')   echo 'selected'; ?>>Resigned</option>
                         <option value="terminated" <?php if($emp['status']=='terminated') echo 'selected'; ?>>Terminated</option>
@@ -164,6 +164,20 @@ function filterRoles() {
     if (first) roleSelect.value = first.value;
 }
 filterRoles();
+const status = document.getElementById('status');
+const endDate = document.querySelector('input[name="end_date"]');
+
+function checkStatus(){
+    if(status.value === 'active'){
+        endDate.value = '';
+        endDate.disabled = true;
+    }else{
+        endDate.disabled = false;
+    }
+}
+
+status.addEventListener('change', checkStatus);
+checkStatus();
 </script>
 </body>
 </html>
