@@ -27,6 +27,14 @@ if (isset($_POST["submit"])){
     $status        = $_POST["status"];
     $start_date    = $_POST["start_date"];
     $end_date      = !empty($_POST["end_date"]) ? $_POST["end_date"] : null;
+    
+    $status        = $_POST["status"];
+    $start_date    = $_POST["start_date"];
+    $end_date      = !empty($_POST["end_date"]) ? $_POST["end_date"] : null;
+
+    if($status === 'active'){
+    $end_date = null;
+}
     // จัดการรูป
     $img = '';
     if(!empty($_FILES["img"]["name"])){
@@ -141,7 +149,7 @@ if (isset($_GET['status'])) {
     <!-- สถานะ -->
     <div class="mb-3">
         <label class="form-label">สถานะ</label>
-        <select name="status" class="form-select">
+        <select name="status" id="status" class="form-select">
             <option value="active">Active</option>
             <option value="resigned">Resigned</option>
             <option value="terminated">Terminated</option>
@@ -158,7 +166,7 @@ if (isset($_GET['status'])) {
     <!-- วันออก -->
     <div class="mb-3">
         <label class="form-label">วันออกจากงาน</label>
-        <input type="date" name="end_date" class="form-control">
+        <input type="date" name="end_date" id="end_date" class="form-control">
         <small class="text-muted">ถ้ายังทำงานอยู่ไม่ต้องกรอก</small>
     </div>
     <button type="submit" name="submit" class="btn btn-primary w-100 mb-4">
@@ -177,9 +185,24 @@ function filterRoles() {
     });
 
     const first = [...roleSelect.options].find(o =>o.style.display !== 'none');
-    if (first) roleSelect.value = first.value;
+    if (first) roleSelect.value = first.value;   
 }
 filterRoles();
+
+const status = document.getElementById('status');
+const endDate = document.getElementById('end_date');
+
+function toggleEndDate(){
+    if(status.value === 'active'){
+        endDate.value = '';
+        endDate.disabled = true;
+    }else{
+        endDate.disabled = false;
+    }
+}
+
+status.addEventListener('change', toggleEndDate);
+toggleEndDate();
 </script>
 </body>
 </html>
