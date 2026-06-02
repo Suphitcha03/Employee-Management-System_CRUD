@@ -22,6 +22,9 @@ require_once __DIR__. "/user.php";
 $controller = new Controller($pdo); //จัดการข้อมูลพนักงาน
 $user = new User($pdo); // จัดการผู้ใช้ระบบ
 
+function e($value){
+    return htmlspecialchars($value, ENT_QUOTES, 'UTF-8');
+}
 //$user->insertUser('admin','12345');
 
 

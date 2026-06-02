@@ -29,13 +29,13 @@
 ?>
 
             <h1 class="text-center"><?php echo "เเบบฟอร์มลงชื่อเข้าใช้" ; ?></h1>
-            <form method="POST" action="<?php echo htmlentities($_SERVER['PHP_SELF']) ?>">
+            <form method="POST" action="<?php echo e($_SERVER['PHP_SELF']) ?>">
                 <div class ="form-group">
                     <label for="fname">Username</label>
                     <input type="text"
                     name="username"
                     class="form-control"
-                    value="<?php if($_SERVER["REQUEST_METHOD"] =="POST") echo $_POST["username"];  ?>">
+                    value="<?php if($_SERVER["REQUEST_METHOD"] =="POST") echo e($_POST["username"]);  ?>">
                 </div>
                 <div class="form-group">
                     <label for="lname">Password</label>

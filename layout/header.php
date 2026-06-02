@@ -22,7 +22,10 @@ require_once "layout/session.php";
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ms-auto">
         <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="index.php">ข้อมูลทั้งหมด</a>
+          <a class="nav-link" aria-current="page" href="index2.php">บอร์ดพนักงาน</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="index.php">ข้อมูลพนักงาน</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="addForm.php">บันทึกข้อมูล</a>

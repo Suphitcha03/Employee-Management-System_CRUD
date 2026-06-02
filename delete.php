@@ -5,9 +5,9 @@ if(!isset($_POST["id"])){
     header("Location:index.php");
     exit();
 }else{
-    $id=$_GET["id"];
+    $id=$_POST["id"];
     $result = $controller->delete($id);
-    
+
     if($result){
         header("Location:index.php");
         exit();
