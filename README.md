@@ -13,14 +13,18 @@ A web-based Employee Management System featuring core CRUD operations, built wit
 
 A web-based Employee Management System developed using PHP, MySQL, and PDO, featuring secure authentication, employee record management, and an interactive dashboard for workforce monitoring.
 
-Key Features
-Developed a complete CRUD (Create, Read, Update, Delete) system for managing employee records.
-Designed a relational database consisting of 5 tables with Primary Keys, Foreign Keys, and Unique Constraints to ensure data integrity.
-Implemented Login & Authentication using Session-based Authentication and Password Hashing.
-Enhanced application security by utilizing PDO Prepared Statements to prevent SQL Injection attacks.
-Applied access control mechanisms to restrict unauthorized users from accessing protected pages.
-Developed employee image management and employment status tracking (Active, Resigned, Terminated), with automatic updates reflected on the dashboard.
-Built a dashboard to visualize employee information grouped by department and status.
+## ✨ Key Features
+
+* Developed a complete **Employee Management System** with full CRUD (Create, Read, Update, Delete) functionality for employee records.
+* Designed and implemented a **relational database** with 5 tables using Primary Keys, Foreign Keys, and Unique Constraints to maintain data integrity.
+* Built a secure **Login & Authentication** system using Session-based Authentication and Password Hashing.
+* Improved application security with **PDO Prepared Statements** to prevent SQL Injection attacks.
+* Implemented **access control and authorization**, restricting unauthenticated users from accessing protected pages.
+* Developed employee profile image upload and management functionality.
+* Created employee status management (Active, Resigned, Terminated) with automatic updates reflected on the dashboard.
+* Built an interactive dashboard to display employee information grouped by department and workforce status.
+* Applied input sanitization techniques to reduce Cross-Site Scripting (XSS) risks and improve data security.
+
 
 ---
 Technologies Used
