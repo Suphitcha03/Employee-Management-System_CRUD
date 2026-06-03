@@ -9,12 +9,29 @@ A web-based Employee Management System featuring core CRUD operations, built wit
 
 ## ✨ Features
 
-- 🔐 **Authentication:** Secure Login and Logout system.
-- 📝 **CRUD Operations:** Create, Read, Update, and Delete employee records.
-- 🗄️ **PDO Connection:** Secure database interactions using PHP Data Objects (PDO) with `.env` configuration.
+👥 Employee Management System (PHP + MySQL)
+
+A web-based Employee Management System developed using PHP, MySQL, and PDO, featuring secure authentication, employee record management, and an interactive dashboard for workforce monitoring.
+
+Key Features
+Developed a complete CRUD (Create, Read, Update, Delete) system for managing employee records.
+Designed a relational database consisting of 5 tables with Primary Keys, Foreign Keys, and Unique Constraints to ensure data integrity.
+Implemented Login & Authentication using Session-based Authentication and Password Hashing.
+Enhanced application security by utilizing PDO Prepared Statements to prevent SQL Injection attacks.
+Applied access control mechanisms to restrict unauthorized users from accessing protected pages.
+Developed employee image management and employment status tracking (Active, Resigned, Terminated), with automatic updates reflected on the dashboard.
+Built a dashboard to visualize employee information grouped by department and status.
 
 ---
-
+Technologies Used
+PHP
+MySQL
+PDO
+HTML5
+JavaScript 
+CSS3
+Bootstrap
+Session Authentication
 ## 🌐 Live Demo
 
 The application is fully configured and currently hosted online. You can view the interface via the link below:
