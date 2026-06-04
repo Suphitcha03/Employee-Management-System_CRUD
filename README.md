@@ -7,46 +7,47 @@ A web-based Employee Management System featuring core CRUD operations, built wit
 
 ---
 
-## ✨ Features
+# 👥 Employee Management System (CRUD)
 
-👥 Employee Management System (PHP + MySQL)
-
-A web-based Employee Management System developed using PHP, MySQL, and PDO, featuring secure authentication, employee record management, and an interactive dashboard for workforce monitoring.
-
-## ✨ Key Features
-
-* Developed a complete **Employee Management System** with full CRUD (Create, Read, Update, Delete) functionality for employee records.
-* Designed and implemented a **relational database** with 5 tables using Primary Keys, Foreign Keys, and Unique Constraints to maintain data integrity.
-* Built a secure **Login & Authentication** system using Session-based Authentication and Password Hashing.
-* Improved application security with **PDO Prepared Statements** to prevent SQL Injection attacks.
-* Implemented **access control and authorization**, restricting unauthenticated users from accessing protected pages.
-* Developed employee profile image upload and management functionality.
-* Created employee status management (Active, Resigned, Terminated) with automatic updates reflected on the dashboard.
-* Built an interactive dashboard to display employee information grouped by department and workforce status.
-* Applied input sanitization techniques to reduce Cross-Site Scripting (XSS) risks and improve data security.
-
+A web-based Employee Management System featuring core CRUD operations, built with PHP, PDO, and MySQL. It includes a secure, basic authentication system.
 
 ---
-Technologies Used
-PHP
-MySQL
-PDO
-HTML5
-JavaScript 
-CSS3
-Bootstrap
-Session Authentication
-## 🌐 Live Demo
 
-The application is fully configured and currently hosted online. You can view the interface via the link below:
-👉 **[Live Demo Website](http://minesite.42web.io)**
+## ✨ คุณสมบัติหลัก (Key Features)
 
-> 🔒 **Access Control:** Due to security and privacy policies, the login credentials for the Admin panel are confidential. If you are an instructor or evaluator and wish to test the live CRUD functionalities, please contact me directly for temporary login access.
+* **ระบบจัดการข้อมูลพนักงานเต็มรูปแบบ (Full CRUD):** รองรับการเพิ่ม, อ่าน, แก้ไข และลบข้อมูลพนักงานอย่างสมบูรณ์แบบ
+* **การออกแบบฐานข้อมูลเชิงสัมพันธ์:** ออกแบบและใช้งานฐานข้อมูลจำนวน 5 ตาราง โดยใช้ Primary Keys, Foreign Keys และ Unique Constraints เพื่อรักษาความถูกต้องและความสอดคล้องกันของข้อมูล (Data Integrity)
+* **ระบบเข้าสู่ระบบและยืนยันตัวตนที่ปลอดภัย:** พัฒนาระบบ Login & Authentication โดยใช้ Session-based Authentication และการทำ Password Hashing
+* **ป้องกันการโจมตีทางไซเบอร์ (Security Hardening):** 
+  * ใช้ **PDO Prepared Statements** เพื่อป้องกันการโจมตีประเภท SQL Injection
+  * ประยุกต์ใช้เทคนิค **Input Sanitization** เพื่อลดความเสี่ยงต่อการเกิด Cross-Site Scripting (XSS)
+* **การควบคุมสิทธิ์เข้าถึง (Authorization):** วางระบบ Access Control จำกัดสิทธิ์ไม่ให้ผู้ใช้งานที่ยังไม่ได้ล็อกอินสามารถเข้าถึงหน้าเว็บที่ได้รับการปกป้องไว้ได้
+* **ระบบจัดการรูปภาพ:** พัฒนาฟังก์ชันอัปโหลดและบริหารจัดการรูปภาพโปรไฟล์ของพนักงาน
+* **ระบบติดตามสถานะพนักงาน:** สร้างระบบจัดการสถานะ (Active, Resigned, Terminated) พร้อมระบบอัปเดตข้อมูลอัตโนมัติเพื่อนำไปแสดงผลบนแดชบอร์ด
+* **แดชบอร์ดสรุปผลภาพรวม:** พัฒนาหน้าแดชบอร์ดแบบโต้ตอบเพื่อแสดงสถิติจำนวนพนักงาน โดยจำแนกกลุ่มตามแผนกและสถานะการทำงานของบุคลากร
+
+---
+
+## 🛠️ เทคโนโลยีที่ใช้ (Technologies Used)
+* **Back-end:** PHP, PDO
+* **Database:** MySQL, PhpMyAdmin
+* **Front-end:** HTML5, CSS3, JavaScript, Bootstrap
+* **Security:** Session Authentication, Password Hashing, Prepared Statements
+
+---
+
+## 🌐 ลิงก์เข้าชมผลงาน (Live Demo)
+
+คุณสามารถเข้าชมหน้าต่างอินเทอร์เฟซและระบบของแอปพลิเคชันเวอร์ชันออนไลน์ได้ที่ลิงก์ด้านล่างนี้:
+👉 **[Live Demo Website](ใส่ลิงก์ของคุณตรงนี้)**
+
+> 🔒 **Note:** The live demo is exclusively dedicated for interview presentations. Public access is restricted as credentials (ID and Password) are required and must be requested directly from the owner.
 > 
-> 📧 **Contact for Access:** [Supitcha971@gmail.com](mailto:Supitcha971@gmail.com)
+> *(เนื่องจากนโยบายความปลอดภัยและความเป็นส่วนตัวของข้อมูล ชุดข้อมูลเข้าสู่ระบบสำหรับสิทธิ์ Admin จะถูกเก็บเป็นความลับ หากคุณเป็นผู้ประเมินผลงาน หรือกรรมการสอบสัมภาษณ์ที่ต้องการทดสอบระบบ CRUD บนหน้าเว็บไซต์จริง กรุณาติดต่อขอรับสิทธิ์เข้าใช้งานชั่วคราวได้โดยตรงผ่านอีเมลด้านล่างนี้ครับ)*
+
+📧 **อีเมลสำหรับติดต่อขอสิทธิ์เข้าใช้งาน:** Supitcha971@gmail.com
 
 ---
 
-## 👤 Author
-
-- **GitHub:** [@Suphitcha03](https://github.com/Suphitcha03)
+## 👤 ผู้พัฒนา (Author)
+* **GitHub:** [@Suphitcha03](https://github.com/Suphitcha03)
