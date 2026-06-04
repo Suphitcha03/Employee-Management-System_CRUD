@@ -32,7 +32,7 @@
 ## 🌐 ลิงก์เข้าชมผลงาน (Live Demo)
 
 คุณสามารถเข้าชมหน้าต่างอินเทอร์เฟซและระบบของแอปพลิเคชันเวอร์ชันออนไลน์ได้ที่ลิงก์ด้านล่างนี้:
-👉 **[Live Demo Website]((https://minesite.42web.io/loginForm.php))**
+👉 **[Live Demo Website](https://minesite.42web.io/loginForm.php)**
 
 > 🔒 **Note:** The live demo is exclusively dedicated for interview presentations. Public access is restricted as credentials (ID and Password) are required and must be requested directly from the owner.
 > 
