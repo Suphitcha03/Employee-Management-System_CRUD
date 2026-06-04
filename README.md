@@ -2,7 +2,7 @@
 
 ![PHP](https://img.shields.io/badge/PHP-7.4%2B-777BB4?style=for-the-badge&logo=php&logoColor=white)
 ![MySQL](https://img.shields.io/badge/MySQL-8.0-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
-A web-based Employee Management System featuring core CRUD operations, built with PHP, PDO, and MySQL. It includes a secure, basic authentication system.
+* **A web-based Employee Management System featuring core CRUD operations, built with PHP, PDO, and MySQL. It includes a secure, basic authentication system.
 
 ---
 
